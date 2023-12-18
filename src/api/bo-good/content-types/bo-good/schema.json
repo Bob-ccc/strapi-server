@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bo_goods",
+  "info": {
+    "singularName": "bo-good",
+    "pluralName": "bo-goods",
+    "displayName": "Bo-good",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ids": {
+      "type": "uid",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "imgs": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "datetime": {
+      "type": "datetime",
+      "required": false
+    },
+    "bo_second_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bo-second-type.bo-second-type"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "img": {
+      "type": "string"
+    }
+  }
+}

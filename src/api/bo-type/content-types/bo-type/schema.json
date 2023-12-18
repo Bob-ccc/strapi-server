@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bo_types",
+  "info": {
+    "singularName": "bo-type",
+    "pluralName": "bo-types",
+    "displayName": "Bo-type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ids": {
+      "type": "uid",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "imgs": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "img": {
+      "type": "string"
+    }
+  }
+}

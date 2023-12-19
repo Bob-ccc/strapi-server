@@ -11,15 +11,15 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.15.0",
-    "@strapi/plugin-users-permissions": "4.15.0",
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.10",
     "@strapi/plugin-i18n": "4.15.0",
+    "@strapi/plugin-users-permissions": "4.15.0",
+    "@strapi/strapi": "4.15.0",
     "mysql": "2.18.1"
   },
   "author": {
     "name": "Bobccc"
   },
-  "workspaces":["./src/plugins/strapi-plugin-ckeditor"],
   "strapi": {
     "uuid": "a2b3c78d-54f8-429f-88a0-06ff397227c7"
   },

@@ -732,8 +732,15 @@ export interface ApiBoGoodBoGood extends Schema.CollectionType {
       'oneToOne',
       'api::bo-second-type.bo-second-type'
     >;
-    description: Attribute.RichText;
     img: Attribute.String;
+    description: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'rich';
+        }
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -682,7 +682,7 @@ export interface ApiBannerBanner extends Schema.CollectionType {
   info: {
     singularName: 'banner';
     pluralName: 'banners';
-    displayName: 'banner';
+    displayName: '\u8F6E\u64AD\uFF08banner\uFF09';
     description: '';
   };
   options: {
